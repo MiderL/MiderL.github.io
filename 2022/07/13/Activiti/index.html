@@ -24,45 +24,42 @@
 <meta property="og:description" content="需求在实际社会生产环境中，我们存在这样的需要，即需要由一个人发起一项活动，这个活动涉及到多个参与者，且可能位于不同的空间中。这样的一个活动就是流程，比如我们常见的请假过程，就是一个流程：由请假人发起请假（填写请假表单），之后由部门领导或老师审批，一直到最终部门审批。 为了更加方便的处理上述过程（自动化处理），流程支持工具出现了，比如我们这里主要介绍的Activiti。 原理 流程自动化的传统做法是">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210505110141039.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/20191226173208831.png">
 <meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/20191226173208831.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210505170416917.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210505165922569.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210505171520863.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210505171720055.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210505175126201.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210505181500549.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210505181526481.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210505181625081.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506204111160.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506204339098.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506204627408.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506204931866.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506205012680.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506205218650.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506205303051.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506205341435.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506205520131.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506205712061.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506205742097.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506212852855.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506213037773.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506213240227.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506213604364.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506213714171.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210506213839650.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210604103404886.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets%5Cimage-20210805230247939.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210805231256151.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210809194514640.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210810195657263.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210809233858149.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210809233207963.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210810205707805.png">
-<meta property="og:image" content="file:///D:/workspace/actiProj/src/main/resources/diagram/holiday.png">
-<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/Activiti.assets/image-20210810214700323.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210505170416917.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210505165922569.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210505171520863.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210505171720055.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210505175126201.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210505181500549.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210505181526481.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210505181625081.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506204111160.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506204339098.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506204627408.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506204931866.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506205012680.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506205218650.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506205303051.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506205341435.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506205520131.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506205712061.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506205742097.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506212852855.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506213037773.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506213240227.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506213604364.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506213714171.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210506213839650.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210604103404886.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210805231256151.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210809194514640.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210810195657263.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210809233858149.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210809233207963.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210810205707805.png">
+<meta property="og:image" content="https://miderl.github.io/2022/07/13/Activiti/image-20210810214700323.png">
 <meta property="article:published_time" content="2022-07-13T12:37:05.000Z">
-<meta property="article:modified_time" content="2022-07-13T14:27:11.125Z">
+<meta property="article:modified_time" content="2022-07-13T15:41:03.700Z">
 <meta property="article:author" content="MiderL">
 <meta property="article:tag" content="原创">
 <meta name="twitter:card" content="summary_large_image">
@@ -401,7 +398,7 @@
 <li><p>引入依赖并配置好数据库等之后，执行测试代码，会生成25张表（视<code>Activiti</code>版本不同而不同，这里使用的<code>Activiti</code>版本是<code>7.0.0.Beta1</code>）</p>
 </li>
 <li><p>25张表的名称有一定的规律</p>
-<img src="/2022/07/13/Activiti/image-20210505110141039.png" srcset="/img/loading.gif" lazyload class="">
+<img src="/2022/07/13/Activiti/image-20210505110141039.png" srcset="/img/loading.gif" lazyload class="" title="Activiti生成的数据库表">
 
 <ul>
 <li>均以<code>act</code>开头</li>
@@ -417,8 +414,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="Activiti服务架构图"><a href="#Activiti服务架构图" class="headerlink" title="Activiti服务架构图"></a>Activiti服务架构图</h2><p><img src="Activiti.assets/20191226173208831.png" srcset="/img/loading.gif" lazyload alt="img"></p>
-<img src="/2022/07/13/Activiti/20191226173208831.png" srcset="/img/loading.gif" lazyload class="">
+<h2 id="Activiti服务架构图"><a href="#Activiti服务架构图" class="headerlink" title="Activiti服务架构图"></a>Activiti服务架构图</h2><img src="/2022/07/13/Activiti/20191226173208831.png" srcset="/img/loading.gif" lazyload class="" title="Activiti服务架构图">
 
 
 
@@ -575,8 +571,7 @@
 <li><p><code>Boundary event</code>：边界事件</p>
 </li>
 <li><p><code>Intermediate event</code>：中间事件</p>
-<p><img src="Activiti.assets/image-20210505170416917.png" srcset="/img/loading.gif" lazyload alt="image-20210505170416917"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210505170416917.png" srcset="/img/loading.gif" lazyload class="" title="Designer提供的面板"></li>
 </ul>
 </li>
 </ul>
@@ -585,18 +580,16 @@
 <ul>
 <li>设置整个流程的属性（单击空白部分，即可在<code>Properties</code>视图窗口中显示流程的相关属性），主要设置流程的ID和名称</li>
 </ul>
-<p><img src="Activiti.assets/image-20210505165922569.png" srcset="/img/loading.gif" lazyload alt="image-20210505165922569"></p>
+<img src="/2022/07/13/Activiti/image-20210505165922569.png" srcset="/img/loading.gif" lazyload class="" title="设置属性">
 <ul>
 <li><p>设置各个结点的属性（单击流程图中目标结点，在<code>Properties</code>视图窗口中显示相关属性），只要设置结点的任务审批人</p>
-<p><img src="Activiti.assets/image-20210505171520863.png" srcset="/img/loading.gif" lazyload alt="image-20210505171520863"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210505171520863.png" srcset="/img/loading.gif" lazyload class="" title="设置结点属性"></li>
 </ul>
 </li>
 </ul>
 <ul>
 <li><p>在绘制并配置好流程图（定义好流程）之后，会生成<code>.bpmn</code>格式的文件。</p>
-<p><img src="Activiti.assets/image-20210505171720055.png" srcset="/img/loading.gif" lazyload alt="image-20210505171720055"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210505171720055.png" srcset="/img/loading.gif" lazyload class="" title="生成的BPMN格式的文件"></li>
 </ul>
 <h3 id="（2）部署流程定义"><a href="#（2）部署流程定义" class="headerlink" title="（2）部署流程定义"></a><strong>（2）部署流程定义</strong></h3><ul>
 <li><p>有了流程图（流程定义）还不行，需要将其部署到工作流引擎<code>activiti</code>中。方法如下：</p>
@@ -606,8 +599,7 @@
 <li><p>使用<code>repositoryService</code>部署已经定义好的流程。代码如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 创建ProcessEngine</span><br><span class="hljs-type">ProcessEngine</span> <span class="hljs-variable">processEngine</span> <span class="hljs-operator">=</span> ProcessEngines.getDefaultProcessEngine();<br><br><span class="hljs-comment">// 得到RepositoryService实例</span><br><span class="hljs-type">RepositoryService</span> <span class="hljs-variable">repositoryService</span> <span class="hljs-operator">=</span> processEngine.getRepositoryService();<br><br><span class="hljs-comment">// 进行部署</span><br><span class="hljs-comment">// 方式一：单个文件分别部署</span><br><span class="hljs-type">Deployment</span> <span class="hljs-variable">deployment</span> <span class="hljs-operator">=</span> repositoryService.createDeployment()<br>    .addClasspathResource(<span class="hljs-string">&quot;diagram/holiday.bpmn&quot;</span>) <span class="hljs-comment">// bpmn文件</span><br>    .addClasspathResource(<span class="hljs-string">&quot;diagram/holiday.png&quot;</span>) <span class="hljs-comment">// 图片文件</span><br>    .name(<span class="hljs-string">&quot;请假流程&quot;</span>)<br>    .deploy(); <span class="hljs-comment">// 部署</span><br><br><span class="hljs-comment">// 方式二：压缩包部署方式(将单个流程定义文件添加到压缩包之后部署)（这种方式便于以后实际的服务器部署）</span><br>ActivitiDeployment.class.getClass().getClassLoader();<br><span class="hljs-type">InputStream</span> <span class="hljs-variable">is</span> <span class="hljs-operator">=</span> ClassLoader.getSystemResourceAsStream(<span class="hljs-string">&quot;diagram/holidayBPMN.zip&quot;</span>);<br><span class="hljs-type">ZipInputStream</span> <span class="hljs-variable">zipInputStream</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ZipInputStream</span>(is);<br><br><span class="hljs-comment">// 进行部署</span><br><span class="hljs-type">Deployment</span> <span class="hljs-variable">deployment</span> <span class="hljs-operator">=</span> repositoryService.createDeployment()<br>    .addZipInputStream(zipInputStream)<br>    .name(<span class="hljs-string">&quot;请假流程&quot;</span>).deploy();<br><br><span class="hljs-comment">// 输出部署信息</span><br>System.out.println(deployment.getName()); <span class="hljs-comment">// 请假流程</span><br>System.out.println(deployment.getId()); <span class="hljs-comment">// 1</span><br></code></pre></td></tr></table></figure></li>
 <li><p>可以发现，在输出的部署信息中，名称与我们设置的流程名称一致，而流程的ID是“1”，这是因为使用了<code>MySQL</code>的主键自动增长策略，观察被操作的数据库表<code>act_re_deployment</code>表可以得知。</p>
-<p><img src="Activiti.assets/image-20210505175126201.png" srcset="/img/loading.gif" lazyload alt="image-20210505175126201"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210505175126201.png" srcset="/img/loading.gif" lazyload class="" title="act_re_deployment表变化"></li>
 </ul>
 </li>
 </ul>
@@ -617,12 +609,11 @@
 <li><p><code>act_re_deployment</code>：部署信息（如不是流程的名称、部署时间等）</p>
 </li>
 <li><p><code>act_re_procdef</code>：流程定义的一些信息（如流程的key等）</p>
-<p><img src="Activiti.assets/image-20210505181500549.png" srcset="/img/loading.gif" lazyload alt="image-20210505181500549"></p>
-<p><img src="Activiti.assets/image-20210505181526481.png" srcset="/img/loading.gif" lazyload alt="image-20210505181526481"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210505181500549.png" srcset="/img/loading.gif" lazyload class="" title="act_re_procdef表变化一">
+
+<img src="/2022/07/13/Activiti/image-20210505181526481.png" srcset="/img/loading.gif" lazyload class="" title="act_re_procdef表变化二"></li>
 <li><p><code>act_ge_bytearray</code>：流程定义的<code>bpmn</code>文件和<code>png</code>文件</p>
-<p><img src="Activiti.assets/image-20210505181625081.png" srcset="/img/loading.gif" lazyload alt="image-20210505181625081"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210505181625081.png" srcset="/img/loading.gif" lazyload class="" title="act_ge_bytearray表变化"></li>
 </ul>
 </li>
 </ul>
@@ -644,30 +635,27 @@
 <li><p>涉及到的表</p>
 <ul>
 <li><p><code>act_hi_actinst</code>：存储已完成的活动信息，即已经完成了流程图中的哪些结点信息。</p>
-<p><img src="Activiti.assets/image-20210506204111160.png" srcset="/img/loading.gif" lazyload alt="image-20210506204111160"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210506204111160.png" srcset="/img/loading.gif" lazyload class="" title="act_hi_actinst表变化"></li>
 <li><p><code>act_hi_identitylink</code>：流程中结点关联的参与者信息（即需要处理该结点的人员信息）。</p>
-<p><img src="Activiti.assets/image-20210506204339098.png" srcset="/img/loading.gif" lazyload alt="image-20210506204339098"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210506204339098.png" srcset="/img/loading.gif" lazyload class="" title="act_hi_identitylink表变化"></li>
 <li><p><code>act_hi_procinst</code>：存储流程实例信息，主要关注流程实例ID。</p>
-<p><img src="Activiti.assets/image-20210506204627408.png" srcset="/img/loading.gif" lazyload alt="image-20210506204627408"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210506204627408.png" srcset="/img/loading.gif" lazyload class="" title="表变化"></li>
 <li><p><code>act_hi_taskinst</code>：存储任务实例（谁要完成什么工作）信息。</p>
-<p><img src="Activiti.assets/image-20210506204931866.png" srcset="/img/loading.gif" lazyload alt="image-20210506204931866"></p>
-<p><img src="Activiti.assets/image-20210506205012680.png" srcset="/img/loading.gif" lazyload alt="image-20210506205012680"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210506204931866.png" srcset="/img/loading.gif" lazyload class="">
+
+<img src="/2022/07/13/Activiti/image-20210506205012680.png" srcset="/img/loading.gif" lazyload class=""></li>
 <li><p><code>act_ru_execution</code>：任务执行表。</p>
-<p><img src="Activiti.assets/image-20210506205218650.png" srcset="/img/loading.gif" lazyload alt="image-20210506205218650"></p>
-<p><img src="Activiti.assets/image-20210506205303051.png" srcset="/img/loading.gif" lazyload alt="image-20210506205303051"></p>
-<p><img src="Activiti.assets/image-20210506205341435.png" srcset="/img/loading.gif" lazyload alt="image-20210506205341435"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210506205218650.png" srcset="/img/loading.gif" lazyload class="">
+
+<img src="/2022/07/13/Activiti/image-20210506205303051.png" srcset="/img/loading.gif" lazyload class="">
+
+<img src="/2022/07/13/Activiti/image-20210506205341435.png" srcset="/img/loading.gif" lazyload class=""></li>
 <li><p><code>act_ru_identitylink</code>：运行时的参与者信息。</p>
-<p><img src="Activiti.assets/image-20210506205520131.png" srcset="/img/loading.gif" lazyload alt="image-20210506205520131"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210506205520131.png" srcset="/img/loading.gif" lazyload class=""></li>
 <li><p><code>act_ru_task</code>：存储任务信息。</p>
-<p><img src="Activiti.assets/image-20210506205712061.png" srcset="/img/loading.gif" lazyload alt="image-20210506205712061"></p>
-<p><img src="Activiti.assets/image-20210506205742097.png" srcset="/img/loading.gif" lazyload alt="image-20210506205742097"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210506205712061.png" srcset="/img/loading.gif" lazyload class="">
+
+<img src="/2022/07/13/Activiti/image-20210506205742097.png" srcset="/img/loading.gif" lazyload class=""></li>
 </ul>
 </li>
 </ul>
@@ -703,23 +691,17 @@
 <li><p>涉及到的表</p>
 <ul>
 <li><p><code>act_hi_actinst</code>：存储已完成的任务结点信息。可以发现，在结点一被处理以后，新的结点被加入进来。</p>
-<p><img src="Activiti.assets/image-20210506212852855.png" srcset="/img/loading.gif" lazyload alt="image-20210506212852855"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210506212852855.png" srcset="/img/loading.gif" lazyload class=""></li>
 <li><p><code>act_hi_identitylink</code>：新的任务结点加入进来，加入新的任务负责人信息。</p>
-<p><img src="Activiti.assets/image-20210506213037773.png" srcset="/img/loading.gif" lazyload alt="image-20210506213037773"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210506213037773.png" srcset="/img/loading.gif" lazyload class=""></li>
 <li><p><code>act_hi_taskinst</code>：新的任务实例被加入进来，同时前一结点的任务加入完成时间。</p>
-<p><img src="Activiti.assets/image-20210506213240227.png" srcset="/img/loading.gif" lazyload alt="image-20210506213240227"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210506213240227.png" srcset="/img/loading.gif" lazyload class=""></li>
 <li><p><code>act_ru_execution</code>：执行新的结点任务，更新当前流程任务结点ID。</p>
-<p><img src="Activiti.assets/image-20210506213604364.png" srcset="/img/loading.gif" lazyload alt="image-20210506213604364"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210506213604364.png" srcset="/img/loading.gif" lazyload class=""></li>
 <li><p><code>act_ru_identitylink</code>：运行时任务结点的参与者信息，与历史表中的参与者信息一致。</p>
-<p><img src="Activiti.assets/image-20210506213714171.png" srcset="/img/loading.gif" lazyload alt="image-20210506213714171"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210506213714171.png" srcset="/img/loading.gif" lazyload class=""></li>
 <li><p><code>act_ru_task</code>：当前运行的任务，保证表中存储的是当前正在运行的结点任务。</p>
-<p><img src="Activiti.assets/image-20210506213839650.png" srcset="/img/loading.gif" lazyload alt="image-20210506213839650"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210506213839650.png" srcset="/img/loading.gif" lazyload class=""></li>
 </ul>
 </li>
 <li><p>剩下的任务结点需要改变完成流程任务代码中的参与者信息，待完成所有任务后，上述表中以<code>act_ru</code>开头的表中的信息也会随之被删除，以<code>act_hi</code>开头的表中的信息会被补全。</p>
@@ -734,13 +716,16 @@
 <li><p>目的是在查询流程信息时关联查询流程对应的业务信息数据，原因是流程所生成的数据表中不存储业务数据。</p>
 </li>
 </ul>
-<p><img src="Activiti.assets/image-20210604103404886.png" srcset="/img/loading.gif" lazyload alt="image-20210604103404886"></p>
+<img src="/2022/07/13/Activiti/image-20210604103404886.png" srcset="/img/loading.gif" lazyload class="">
+
+
+
 <h2 id="挂起单个流程实例"><a href="#挂起单个流程实例" class="headerlink" title="挂起单个流程实例"></a>挂起单个流程实例</h2><p>对于流程实例的挂起操作，影响的数据表有哪些？影响了哪些字段？</p>
 <p>解答：影响的表有<code>ACT_RU_EXECUTION</code>和<code>ACT_RU_TASK</code>。影响的字段主要有<code>SUSPENSION_STATE_</code>，“1”表示处于激活状态，“2”表示处于挂起状态。状态字段对应的一个接口类是<code>SuspensionState</code>，在该类中定义了状态常量，其实现类是<code>SuspensionStateImpl</code>。</p>
 <p>当对一个挂起的流程实例执行其任务时，会报异常，异常信息为：</p>
 <p><code>Exception in thread &quot;main&quot; org.activiti.engine.ActivitiException: Cannot complete a suspended task     at org.activiti.engine.impl.cmd.NeedsActiveTaskCmd.execute(NeedsActiveTaskCmd.java:53)     at org.activiti.engine.impl.interceptor.CommandInvoker$1.run(CommandInvoker.java:37)     at org.activiti.engine.impl.interceptor.CommandInvoker.executeOperation(CommandInvoker.java:78)     at org.activiti.engine.impl.interceptor.CommandInvoker.executeOperations(CommandInvoker.java:57)     at org.activiti.engine.impl.interceptor.CommandInvoker.execute(CommandInvoker.java:42)     at org.activiti.engine.impl.interceptor.TransactionContextInterceptor.execute(TransactionContextInterceptor.java:48)     at org.activiti.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:63)     at org.activiti.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:29)     at org.activiti.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:44)     at org.activiti.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:39)     at org.activiti.engine.impl.TaskServiceImpl.complete(TaskServiceImpl.java:192)     at com.poetr.activiti.ActivitiCompleteTask.main(ActivitiCompleteTask.java:24)</code></p>
 <h2 id="Activiti中个人任务的分配方式"><a href="#Activiti中个人任务的分配方式" class="headerlink" title="Activiti中个人任务的分配方式"></a>Activiti中个人任务的分配方式</h2><p>固定的方式：在定义流程时指定特定的人。</p>
-<p><img src="Activiti.assets%5Cimage-20210805230247939.png" srcset="/img/loading.gif" lazyload alt="image-20210805230247939"></p>
+<p>(Activiti.assets\image-20210805230247939.png %}</p>
 <p>使用UEL表达式：</p>
 <ul>
 <li><p>UEL（Unified Expression Language） 统一表达式语言，是Java EE6规范的一部分</p>
@@ -748,13 +733,13 @@
 <li><p>activiti支持两个UEL表达式：UEL-value，UEL-method</p>
 </li>
 </ul>
-<p><img src="Activiti.assets/image-20210805231256151.png" srcset="/img/loading.gif" lazyload alt="image-20210805231256151"></p>
+<img src="/2022/07/13/Activiti/image-20210805231256151.png" srcset="/img/loading.gif" lazyload class="">
+
 <p>使用监听器方式：</p>
 <ul>
 <li><p>任务监听器方式是发生对应的任务相关事件时执行自定义Java逻辑 或 表达式（同UEL表达式）</p>
 </li>
-<li><p><img src="Activiti.assets/image-20210809194514640.png" srcset="/img/loading.gif" lazyload alt="image-20210809194514640"></p>
-</li>
+<li><img src="/2022/07/13/Activiti/image-20210809194514640.png" srcset="/img/loading.gif" lazyload class=""></li>
 <li><p>create：任务创建后触发</p>
 <p>assignment：任务分配后触发</p>
 <p>complete：任务完成后触发</p>
@@ -766,7 +751,7 @@
 </li>
 <li><p>```java<br>// 设置assignee的取值 用户可以在界面上设置流程的执行人<br>Map&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;();<br>map.put(“assignee0”, “zhangsan”); // key必须与UEL表达式中的Key一致<br>map.put(“assignee1”, “lisi”);<br>map.put(“assignee2”, “wangwu”);</p>
 <p>// 启动流程实例 同时还要设置流程定义中assignee的值<br>ProcessInstance processInstance = runtimeService.startProcessInstanceByKey(“holiday”, map); // 将指派值作为参数传入</p>
-<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs arduino"><br>- 上面指定的值，在Activiti中称之为流程变量<br><br>- 执行上述操作之后，影响的数据表是`act_ru_variable`，在该表中存储流程变量信息<br><br>- ![image<span class="hljs-number">-20210809194248144</span>](Activiti.assets/image<span class="hljs-number">-20210809194248144.</span>png)<br><br><br><br>### 流程变量<br><br>- 流程变量是为了让流程更有效的运转；在与业务系统整合时，流程变量不可或缺；时Activiti在管理工作流时为了管理需要而设置的变量<br><br>- 类型<br><br>  ![image<span class="hljs-number">-20210809200243735</span>](Activiti.assets/image<span class="hljs-number">-20210809200243735.</span>png)<br><br>- 作用域<br><br>  默认是一个流程实例（processInstance）——&gt;global变量；也可以设置为一个任务（task）和一个执行实例（execution）——&gt;local变量。<br><br>  在不同的位置设置，作用于不同的作用域：在启动流程实例时设置，作用于整个流程实例；在完成某一任务时，则作用于之后的流程实例节点；通过当前任务设置变量，作用于当前任务，当前任务必须是待办任务，否则异常。<br><br>  ```java<br>  <span class="hljs-comment">// 启动流程实例时</span><br>  runtimeService.<span class="hljs-built_in">startProcessInstanceByKey</span>(<span class="hljs-string">&quot;holiday&quot;</span>, map); <span class="hljs-comment">// map为Map集合</span><br>  <br>  <span class="hljs-comment">// 完成某一任务时</span><br>  taskService.<span class="hljs-built_in">complete</span>(taskId, map);<br>  <br>  <span class="hljs-comment">// 通过当前任务</span><br>  taskService.<span class="hljs-built_in">setVariables</span>(taskId, map);<br></code></pre></td></tr></table></figure></li>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs arduino"><br>- 上面指定的值，在Activiti中称之为流程变量<br><br>- 执行上述操作之后，影响的数据表是`act_ru_variable`，在该表中存储流程变量信息<br><br>- &#123;% asset_img image<span class="hljs-number">-20210809194248144.</span>png %&#125;<br><br><br><br>### 流程变量<br><br>- 流程变量是为了让流程更有效的运转；在与业务系统整合时，流程变量不可或缺；时Activiti在管理工作流时为了管理需要而设置的变量<br><br>- 类型<br><br>  &#123;% asset_img image<span class="hljs-number">-20210809200243735.</span>png %&#125;<br><br>- 作用域<br><br>  默认是一个流程实例（processInstance）——&gt;global变量；也可以设置为一个任务（task）和一个执行实例（execution）——&gt;local变量。<br><br>  在不同的位置设置，作用于不同的作用域：在启动流程实例时设置，作用于整个流程实例；在完成某一任务时，则作用于之后的流程实例节点；通过当前任务设置变量，作用于当前任务，当前任务必须是待办任务，否则异常。<br><br>  ```java<br>  <span class="hljs-comment">// 启动流程实例时</span><br>  runtimeService.<span class="hljs-built_in">startProcessInstanceByKey</span>(<span class="hljs-string">&quot;holiday&quot;</span>, map); <span class="hljs-comment">// map为Map集合</span><br>  <br>  <span class="hljs-comment">// 完成某一任务时</span><br>  taskService.<span class="hljs-built_in">complete</span>(taskId, map);<br>  <br>  <span class="hljs-comment">// 通过当前任务</span><br>  taskService.<span class="hljs-built_in">setVariables</span>(taskId, map);<br></code></pre></td></tr></table></figure></li>
 <li><p>使用</p>
 <p>可以将流程变量设置在流程的线上，连线上的UEL表达式决定了流程的走向</p>
 </li>
@@ -783,8 +768,7 @@
 <li><p>候选人的设置是为了更好的提升流程的可扩展性，而非固定的只能由一个人执行某一任务（Candidate users）</p>
 </li>
 <li><p>设置候选人会影响的表有<code>act_ru_identitylink</code>和<code>act_hi_identitylink</code>，候选人的<code>type</code>字段为<code>candidant</code></p>
-<p><img src="Activiti.assets/image-20210810195657263.png" srcset="/img/loading.gif" lazyload alt="image-20210810195657263"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210810195657263.png" srcset="/img/loading.gif" lazyload class=""></li>
 <li><p>办理组任务的流程：</p>
 <ul>
 <li>查询组任务（根据指定的候选人信息查询可以办理的组任务，候选人不能办理组任务）</li>
@@ -798,9 +782,9 @@
 
 <p>​        拾取任务成功后，会在当前任务表中的<code>assignee</code>字段赋值。</p>
 <p>​        拾取前：</p>
-<p>​    <img src="Activiti.assets/image-20210809233858149.png" srcset="/img/loading.gif" lazyload alt="image-20210809233858149"></p>
+<p>​    <img src="/2022/07/13/Activiti/image-20210809233858149.png" srcset="/img/loading.gif" lazyload class=""></p>
 <p>​        拾取后：</p>
-<p><img src="Activiti.assets/image-20210809233207963.png" srcset="/img/loading.gif" lazyload alt="image-20210809233207963"></p>
+<p>​    <img src="/2022/07/13/Activiti/image-20210809233207963.png" srcset="/img/loading.gif" lazyload class=""></p>
 <ul>
 <li><p>查询个人任务</p>
 <p>拾取组任务之后，可以与个人任务的查询一致，进行负责人任务的查询</p>
@@ -820,8 +804,7 @@
 <li><p>每一只能选择一条满足条件的路径执行，都不满足时报Activiti异常</p>
 </li>
 <li><p>任务执行到网关后，会在<code>act_hi_actinst</code>表中插入数据</p>
-<p><img src="Activiti.assets/image-20210810205707805.png" srcset="/img/loading.gif" lazyload alt="image-20210810205707805"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210810205707805.png" srcset="/img/loading.gif" lazyload class=""></li>
 </ul>
 </li>
 </ul>
@@ -833,21 +816,17 @@
 <li><p>并行网关的功能是基于进入和外出顺序流的</p>
 </li>
 <li><p>并行网关不会解析条件，即使顺序流中定义了条件，也会被忽略</p>
-<p><img src="file:///D:/workspace/actiProj/src/main/resources/diagram/holiday.png" srcset="/img/loading.gif" lazyload alt="img"></p>
 </li>
 <li><p>并行节点处会在当前执行任务表中同时存在等于输出流总数的记录数，而一般只存在一条当前执行任务</p>
-<p><img src="Activiti.assets/image-20210810214700323.png" srcset="/img/loading.gif" lazyload alt="image-20210810214700323"></p>
-</li>
+<img src="/2022/07/13/Activiti/image-20210810214700323.png" srcset="/img/loading.gif" lazyload class=""></li>
 <li><p>所有分支到达汇聚结点，并行网关执行完成</p>
 </li>
 </ul>
 </li>
 </ul>
 <ul>
-<li>排他网关<ul>
+<li>排他网关</li>
 <li>是排他网关和并行网关结合体</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -869,12 +848,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Activiti/" class="category-chain-item">Activiti</a>
+  <a href="/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81/" class="category-chain-item">工作流</a>
   
   
     <span>></span>
     
-  <a href="/categories/Activiti/%E5%B7%A5%E4%BD%9C%E6%B5%81/" class="category-chain-item">工作流</a>
+  <a href="/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81/Activiti/" class="category-chain-item">Activiti</a>
   
   
 
@@ -949,12 +928,6 @@
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2022/07/13/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" title="测试文章">
-                        <span class="hidden-mobile">测试文章</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
